@@ -56,11 +56,11 @@ while count <= 5: #5<=5
     print(count) #5
 
 #while else
-count=0
-while count<=15:
-    count+=1
-    print(count)
-    if count==10:
+count=0 #initialization
+while count<=15: #condition
+    count+=1 # 16
+    print(count) #1
+    if count==10: #
         break
 else:
     print("completed")
