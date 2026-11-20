@@ -112,4 +112,80 @@ for i in range(len(a)):
 else:
     print("Not Found")
 
+a = [4 ,5 ,3,6, 10,6]
+n = 60
+if n in a:
+    print("Found at :"+str(a.index(n)))
+else:
+    print('Not Found')
 
+
+#Given a list, you have to 
+# find the maximum element in this list.
+
+a = [2,10,2,12,60]
+# ans = 60 
+max_ele=a[0] #60
+for i in range(1,len(a)):
+    if a[i]>max_ele: #60>12
+        max_ele=a[i]#60
+print(max_ele)
+
+#Given a list, you have to find 
+# the minimum element in this list
+
+a = [2,10,2,12,60]
+# ans = 2
+min_ele=a[0] #2
+for i in range(1,len(a)):
+    if a[i]<min_ele: #2<10
+        min_ele=a[i]#2
+print(min_ele)
+
+#*	List Comprehension
+# Create a list of squares till n-1 
+n=5
+square=[]
+for i in range(n):
+    square.append(i*i)
+print(square)
+
+new_square=[i*i for i in range(n)]
+print(new_square)
+
+# Create a list of all even elements 
+even_num=[i for i in range(0,n,2)] # 0 2 4
+print(even_num)
+
+even_num=[i for i in range(0,n) if i%2==0] # 0 2 4
+print(even_num)
+
+# create a 2 array with initalization of 0
+row=5
+col=4
+
+array=[[1 for j in range(col)]for i in range(row)]
+print(array)
+
+# # split 
+# a=input()
+# arr=a.split(' ')
+# arr=[int(i)  for i in arr]
+# print(arr)
+
+user_input_list=[]
+row=5
+col=4
+n=0
+
+for i in range(row):
+    temp=[]
+    for j in range(col):
+        n+=2
+        temp.append(n)
+
+    user_input_list.append(temp)
+print (user_input_list)
+
+a = [1,2,6,4,8,' '] 
+print(a[::-1])
